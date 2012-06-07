@@ -1,0 +1,17 @@
+U1 ATMEGA32U4 ATMEGA32U4-AU-ND $3.36840
+S1 reset switch 6mm 450-1652-ND               $0.1114
+Y1 16MHz HC49 crystal, 18pF load cap, CTX1085-ND $0.2320
+
+RN1 5x10k bussed, 6-SIP 4606X-1-103LF-ND $0.08440
+RN2 3x10k isolated, 6-SIP 4606X-2-103LF-ND $0.08440
+RN3 3x100k isolated, 6-SIP 4606X-2-104LF-ND $0.08440
+RN4 4x1k isolated, 8-SIP 4608X-2-102LF-ND $0.11320
+                         987-1254-ND      $0.11390
+
+
+
+Optional:
+U2 LMV358IDR 296-9571-1-ND 8-SOIC, $0.15
+L1/L2 300 ohm bead ferrite MH2029-300Y-ND $0.0174 (quantity 4000)
+Z1/Z2 5VDC 0603 ESD suppressor CG0603MLC-05E-ND $0.06916 (quantity 10,000)
+F1 500mA 15V fuse 1812 footprint MF-MSMF050-2CT-ND $0.1475
