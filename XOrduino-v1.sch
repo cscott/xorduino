@@ -9910,7 +9910,7 @@ Simple 3.5mm common PCB mount audio jack. SKU: PRT-08032</description>
 <text x="-76.2" y="-34.29" size="1.27" layer="97" rot="R90">optional</text>
 <text x="-120.142" y="-31.496" size="1.27" layer="97">optional</text>
 <text x="169.926" y="43.434" size="1.27" layer="97">optional</text>
-<text x="189.23" y="-58.928" size="2.54" layer="97">2</text>
+<text x="189.23" y="-58.928" size="2.54" layer="97">3</text>
 <text x="192.024" y="-69.088" size="2.54" layer="97">CSA</text>
 <text x="40.64" y="30.48" size="3.81" layer="94" ratio="10" rot="MR0">Scratch Sensor Board</text>
 <text x="38.1" y="-50.8" size="1.778" layer="97" rot="MR0">LMV358</text>
