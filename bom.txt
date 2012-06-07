@@ -17,3 +17,4 @@ Z1/Z2 5VDC 0603 ESD suppressor CG0603MLC-05E-ND $0.06916 (quantity 10,000)
 F1 500mA 15V fuse 1812 footprint MF-MSMF050-2CT-ND $0.1475
 
 audio jacks: CP-2523MJCT-ND
+X2 USB mini-B WM17115-ND          $1.1038
