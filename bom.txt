@@ -1,20 +1,70 @@
-U1 ATMEGA32U4 ATMEGA32U4-AU-ND $3.36840
-S1 reset switch 6mm 450-1652-ND               $0.1114
-Y1 16MHz HC49 crystal, 18pF load cap, CTX1085-ND $0.2320
+Partlist (v4)
 
-RN1 5x10k bussed, 6-SIP 4606X-1-103LF-ND $0.08440
-RN2 3x10k isolated, 6-SIP 4606X-2-103LF-ND $0.08440
-RN3 3x100k isolated, 6-SIP 4606X-2-104LF-ND $0.08440
-RN4 4x1k isolated, 8-SIP 4608X-2-102LF-ND $0.11320
-                         987-1254-ND      $0.11390
+REQUIRED:
+Part     Value              Device            Package              Library                    Digikey   Cost (qty 100)
+C1       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C2       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C3       18p                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C4       18p                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C6       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C7       1uF                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C8       10uF               CAP_POLPTH2       CPOL-RADIAL-10UF-25V SparkFun-Passives          1
+C9       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+F1       MF-MSMF050-2 500mA L-EUL1812         L1812                rcl                        MF-MSMF050-2CT-ND $0.1475 500mA 15V fuse 1812 footprint 
+L        Yellow             LED3MM            LED3MM               led                        1
+RX       Yellow             LED3MM            LED3MM               led                        754-1218-ND       $0.07150 3mm T1 red
+TX       Yellow             LED3MM            LED3MM               led                        754-1218-ND       $0.07150 3mm T1 red
+ON       Green              LED3MM            LED3MM               led                        754-1217-ND       $0.07150 3mm T1 green
+R8       22                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          1
+R9       22                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          1
+RN2      10k                E3RP              SIL6                 resistor-sil               4606X-2-103LF-ND  $0.08440 3x10k isolated, 6-SIP 
+RN4      1k                 E4RP              SIL8                 resistor-sil               4608X-2-102LF-ND  $0.11320  4x1k isolated, 8-SIP 
+S1       RESET 6mm          TAC_SWITCHPTH     TACTILE-PTH          SparkFun-Electromechanical 450-1652-ND       $0.1114
+U1       ATMEGA32U4-XUAU    ATMEGA32U4-XUAU   TQFP44-PAD           SmartPrj                   ATMEGA32U4-AU-ND  $3.36840
+Y1       16MHz HC49,18pF    CRYSTALHC49US     HC49US               SparkFun-FreqCtrl          CTX1085-ND        $0.2320
+
+OPTIONAL:
+Part     Value              Device            Package              Library                    Sheet
+
+C5       1uF                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C10      0.1uF              CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C11      0.22uF             CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C13      0.33uF             CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+D1       1N4148             DIODE1N4148       DIODE-1N4148         SparkFun-DiscreteSemi      1
+D2       1N4148             DIODE1N4148       DIODE-1N4148         SparkFun-DiscreteSemi      1
+H1       ICSP               PINHD-2X3         2X03                 SmartPrj                   1
+J1       10x1F-H8.5         PINHD-1X10        1X10                 SmartPrj                   1
+J2       8x1F-H8.5          PINHD-1X8         1X08                 SmartPrj                   1
+J3       8x1F-H8.5          PINHD-1X8         1X08                 SmartPrj                   1
+J4       6x1F-H8.5          PINHD-1X6         1X06                 SmartPrj                   1
+J5       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun                   CP-2523MJCT-ND
+J6       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun                   CP-2523MJCT-ND
+J7       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun                   CP-2523MJCT-ND
+J8       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun                   CP-2523MJCT-ND
+L1       MH2029-300Y        WE-CBF_0805       0805                 wuerth-elektronik          MH2029-300Y-ND    $0.0174 300 ohm bead ferrite (qty 4000)
+L2       MH2029-300Y        WE-CBF_0805       0805                 wuerth-elektronik          MH2029-300Y-ND    $0.0174 300 ohm bead ferrite (qty 4000)
+R1       1M                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          1
+R7       2.2k               RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          1
+RN1      10k                GE05RP            SIL6                 resistor-sil               4606X-1-103LF-ND  $0.08440 5x10k bussed, 6-SIP
+RN3      100k               E3RP              SIL6                 resistor-sil               4606X-2-104LF-ND  $0.08440 3x100k isolated, 6-SIP
+S2       6mm Button         TAC_SWITCHPTH     TACTILE-PTH          SparkFun-Electromechanical 1
+U7       TEMT6000           TEMT6000          TEMT6000-SEN         SparkFun                   1
+U8       LMV358IDR          LMV358            SO08                 SparkFun                   296-9571-1-ND     $0.15 8-SOIC
+U9       MIC9.7MM           MIC9.7MM          MIC-9.7MM            SparkFun                   1
+U10      10k                POT               ALPS_POT             SparkFun-Electromechanical 1
+X2       USB                USB               USB-MB-H2            xorduino                   WM17115-ND        $1.1038 USB mini-B through hole
+Z1       CG0603MLC-05E      VARISTORCN0603    CT/CN0603            varistor                   CG0603MLC-05E-ND  $0.06916 5VDC 0603 ESD suppressor (qty 10,000)
+Z2       CG0603MLC-05E      VARISTORCN0603    CT/CN0603            varistor                   CG0603MLC-05E-ND  $0.06916 5VDC 0603 ESD suppressor (qty 10,000)
+
+OTHER:
+JP2      N/C                SOLDERJUMPERTRACE SJ_2S-TRACE          SparkFun-Passives          1
+JP3      N/C                SOLDERJUMPERTRACE SJ_2S-TRACE          SparkFun-Passives          1
+JP4      N/C                SOLDERJUMPERTRACE SJ_2S-TRACE          SparkFun-Passives          1
+JP5      N/C                SOLDERJUMPERTRACE SJ_2S-TRACE          SparkFun-Passives          1
+JP6      Sensor Routing     JP7QES            JP7QS                xorduino                   1
+X1       USBPCB             USBPCB            USB-A-PCB            SparkFun-Connectors        1
+
+=========
 
 
-
-Optional:
-U2 LMV358IDR 296-9571-1-ND 8-SOIC, $0.15
-L1/L2 300 ohm bead ferrite MH2029-300Y-ND $0.0174 (quantity 4000)
-Z1/Z2 5VDC 0603 ESD suppressor CG0603MLC-05E-ND $0.06916 (quantity 10,000)
-F1 500mA 15V fuse 1812 footprint MF-MSMF050-2CT-ND $0.1475
-
-audio jacks: CP-2523MJCT-ND
-X2 USB mini-B WM17115-ND          $1.1038
+RN4 alternate is: 987-1254-ND      $0.11390
