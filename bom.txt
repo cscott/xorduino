@@ -2,21 +2,21 @@ Partlist (v4)
 
 REQUIRED:
 Part     Value              Device            Package              Library                    Digikey   Cost (qty 100)
-C1       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C2       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C3       18p                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C4       18p                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C6       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C7       1uF                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C8       10uF               CAP_POLPTH2       CPOL-RADIAL-10UF-25V SparkFun-Passives          1
-C9       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
+C1       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          478-5741-ND           $0.09450 (.100" lead spacing)
+C2       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          478-5741-ND           $0.09450 (.100" lead spacing)
+C3       18p                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          BC1004CT-ND           $0.11760 (.100" lead spacing)
+C4       18p                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          BC1004CT-ND           $0.11760 (.100" lead spacing)
+C6       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          478-5741-ND           $0.09450 (.100" lead spacing)
+C7       1uF                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          P5174-ND              $0.06800  (.08" lead spacing)
+C8       10uF               CAP_POLPTH2       CPOL-RADIAL-10UF-25V SparkFun-Passives          399-6100-ND           $0.05350  (.08" lead spacing)
+C9       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          478-5741-ND           $0.09450 (.100" lead spacing)
 F1       MF-MSMF050-2 500mA L-EUL1812         L1812                rcl                        MF-MSMF050-2CT-ND $0.1475 500mA 15V fuse 1812 footprint 
-L        Yellow             LED3MM            LED3MM               led                        1
+L        Yellow             LED3MM            LED3MM               led                        754-1212-ND       $0.08250 3mm T1 yellow
 RX       Yellow             LED3MM            LED3MM               led                        754-1218-ND       $0.07150 3mm T1 red
 TX       Yellow             LED3MM            LED3MM               led                        754-1218-ND       $0.07150 3mm T1 red
 ON       Green              LED3MM            LED3MM               led                        754-1217-ND       $0.07150 3mm T1 green
-R8       22                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          1
-R9       22                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          1
+R8       22                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          CF14JT22R0CT-ND   $0.02190
+R9       22                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          CF14JT22R0CT-ND   $0.02190
 RN2      10k                E3RP              SIL6                 resistor-sil               4606X-2-103LF-ND  $0.08440 3x10k isolated, 6-SIP 
 RN4      1k                 E4RP              SIL8                 resistor-sil               4608X-2-102LF-ND  $0.11320  4x1k isolated, 8-SIP 
 S1       RESET 6mm          TAC_SWITCHPTH     TACTILE-PTH          SparkFun-Electromechanical 450-1652-ND       $0.1114
@@ -26,12 +26,12 @@ Y1       16MHz HC49,18pF    CRYSTALHC49US     HC49US               SparkFun-Freq
 OPTIONAL:
 Part     Value              Device            Package              Library                    Sheet
 
-C5       1uF                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C10      0.1uF              CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C11      0.22uF             CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-C13      0.33uF             CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          1
-D1       1N4148             DIODE1N4148       DIODE-1N4148         SparkFun-DiscreteSemi      1
-D2       1N4148             DIODE1N4148       DIODE-1N4148         SparkFun-DiscreteSemi      1
+C5       1uF                CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          P5174-ND              $0.06800  (.08" lead spacing)
+C10      0.1uF              CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          478-5741-ND           $0.09450 (.100" lead spacing)
+C11      0.22uF             CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          P821-ND               $0.08020  (.06"/1.5mm)
+C13      0.33uF             CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          P822-ND               $0.08020  (.06"/1.5mm)
+D1       1N4148             DIODE1N4148       DIODE-1N4148         SparkFun-DiscreteSemi      1N4148FS-ND           $0.03690 (DO-35)
+D2       1N4148             DIODE1N4148       DIODE-1N4148         SparkFun-DiscreteSemi      1N4148FS-ND           $0.03690 (DO-35)
 H1       ICSP               PINHD-2X3         2X03                 SmartPrj                   1
 J1       10x1F-H8.5         PINHD-1X10        1X10                 SmartPrj                   1
 J2       8x1F-H8.5          PINHD-1X8         1X08                 SmartPrj                   1
@@ -43,8 +43,8 @@ J7       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun     
 J8       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun                   CP-2523MJCT-ND
 L1       MH2029-300Y        WE-CBF_0805       0805                 wuerth-elektronik          MH2029-300Y-ND    $0.0174 300 ohm bead ferrite (qty 4000)
 L2       MH2029-300Y        WE-CBF_0805       0805                 wuerth-elektronik          MH2029-300Y-ND    $0.0174 300 ohm bead ferrite (qty 4000)
-R1       1M                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          1
-R7       2.2k               RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          1
+R1       1M                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          S1MQCT-ND         $0.02280
+R7       2.2k               RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          CF14JT2K20CT-ND   $0.02190
 RN1      10k                GE05RP            SIL6                 resistor-sil               4606X-1-103LF-ND  $0.08440 5x10k bussed, 6-SIP
 RN3      100k               E3RP              SIL6                 resistor-sil               4606X-2-104LF-ND  $0.08440 3x100k isolated, 6-SIP
 S2       6mm Button         TAC_SWITCHPTH     TACTILE-PTH          SparkFun-Electromechanical 1
@@ -68,3 +68,4 @@ X1       USBPCB             USBPCB            USB-A-PCB            SparkFun-Conn
 
 
 RN4 alternate is: 987-1254-ND      $0.11390
+C3/C4 alternate is 1428PH-ND             $0.11730 (.250" lead spacing)
