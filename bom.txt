@@ -1,5 +1,13 @@
 Partlist (v4)
 
+alternative to 478-5741-ND: 478-3192-ND ($0.11)
+xx: look at using the RC suffixed version of the ATMEGA32U4, avoids need for crystal
+ie, ATMEGA32U4RC-AU-ND (low speed USB only)
+alternative to 4608X-2-102LF-ND: 987-1254-ND
+rename C13 to C12
+U7's price is ridiculous
+rename R7/R8/R9 to R4/R2/R3
+
 REQUIRED:
 Part     Value              Device            Package              Library                    Digikey   Cost (qty 100)
 C1       100n               CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          478-5741-ND           $0.09450 (.100" lead spacing)
@@ -32,11 +40,12 @@ C11      0.22uF             CAPPTH            CAP-PTH-SMALL        SparkFun-Pass
 C13      0.33uF             CAPPTH            CAP-PTH-SMALL        SparkFun-Passives          P822-ND               $0.08020  (.06"/1.5mm)
 D1       1N4148             DIODE1N4148       DIODE-1N4148         SparkFun-DiscreteSemi      1N4148FS-ND           $0.03690 (DO-35)
 D2       1N4148             DIODE1N4148       DIODE-1N4148         SparkFun-DiscreteSemi      1N4148FS-ND           $0.03690 (DO-35)
-H1       ICSP               PINHD-2X3         2X03                 SmartPrj                   1
+H1       ICSP               PINHD-2X3         2X03                 SmartPrj                   609-3218-ND           $0.1778
 J1       10x1F-H8.5         PINHD-1X10        1X10                 SmartPrj                   1
 J2       8x1F-H8.5          PINHD-1X8         1X08                 SmartPrj                   1
 J3       8x1F-H8.5          PINHD-1X8         1X08                 SmartPrj                   1
 J4       6x1F-H8.5          PINHD-1X6         1X06                 SmartPrj                   1
+                                                                                              S1012EC-40-ND         0.37800 (1x40, for J1/J2/J3/J4)
 J5       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun                   CP-2523MJCT-ND
 J6       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun                   CP-2523MJCT-ND
 J7       2.5mm              AUDIO-JACKSMD     STEREOJACK2.5MM_SMD  SparkFun                   CP-2523MJCT-ND
@@ -47,11 +56,11 @@ R1       1M                 RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Pass
 R7       2.2k               RESISTORAXIAL-0.3 AXIAL-0.3            SparkFun-Passives          CF14JT2K20CT-ND   $0.02190
 RN1      10k                GE05RP            SIL6                 resistor-sil               4606X-1-103LF-ND  $0.08440 5x10k bussed, 6-SIP
 RN3      100k               E3RP              SIL6                 resistor-sil               4606X-2-104LF-ND  $0.08440 3x100k isolated, 6-SIP
-S2       6mm Button         TAC_SWITCHPTH     TACTILE-PTH          SparkFun-Electromechanical 1
-U7       TEMT6000           TEMT6000          TEMT6000-SEN         SparkFun                   1
+S2       6mm Button         TAC_SWITCHPTH     TACTILE-PTH          SparkFun-Electromechanical 450-1652-ND       $0.1114  6mm
+U7       TEMT6000           TEMT6000          TEMT6000-SEN         SparkFun                   751-1055-1-ND     $0.90450
 U8       LMV358IDR          LMV358            SO08                 SparkFun                   296-9571-1-ND     $0.15 8-SOIC
-U9       MIC9.7MM           MIC9.7MM          MIC-9.7MM            SparkFun                   1
-U10      10k                POT               ALPS_POT             SparkFun-Electromechanical 1
+U9       MIC9.7MM           MIC9.7MM          MIC-9.7MM            SparkFun                   102-1721-ND       $0.56930
+U10      10k                POT               ALPS_POT             SparkFun-Electromechanical 987-1276-ND       $0.46
 X2       USB                USB               USB-MB-H2            xorduino                   WM17115-ND        $1.1038 USB mini-B through hole
 Z1       CG0603MLC-05E      VARISTORCN0603    CT/CN0603            varistor                   CG0603MLC-05E-ND  $0.06916 5VDC 0603 ESD suppressor (qty 10,000)
 Z2       CG0603MLC-05E      VARISTORCN0603    CT/CN0603            varistor                   CG0603MLC-05E-ND  $0.06916 5VDC 0603 ESD suppressor (qty 10,000)

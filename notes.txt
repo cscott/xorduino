@@ -1,0 +1,30 @@
+Notes on v4:
+ - avoid tab on usb connector, move to body
+ - N/C jumpers turned out N/O (scratch sensor board)
+ - merge 5V and +5V nets
+ - C5/C7 too close together (and too close to C9) & need polarity marks
+ - C11/C13 needs polarity mark (or to be unpolarized)
+ - flip RN3?
+ - audio jack footprints are wrong.  and drill holes overlap for top&bottom
+ - just use tip and sleeve(gnd) on audio jack (leave ring(s) disconnected)
+   use 1/8" instead of 3/32"?
+ - right angle pot is right but don't need strain relief holes, need knob (shorter handle?)
+ - mini USB jack silkscreen on wrong side & just a tiny bit too close
+   to pcb plug
+ - mounting hole clearances too small:
+    
+ - add front nose skid (near where audio jack currently sits?)
+ - potentiometer footprint 
+ - add light sensors and/or bumper switches somehow
+   light sensors pointed at the wheels?
+ - add labels to new arduino 1.0 pins (SCL/SDA above AREF)
+ - add breakoff tabs to thicken USB plug (by reset pin, two deep)
+ - solder spot under AVR is unnecessary
+ - male header strip should be female for arduino headers
+ - ISP header needs pin 1 indication, label.
+ - Yellow LEDs don't have a flat side!
+
+NOTE THAT ATmega32u4 should be placed upside down.
+
+TESTED: xorduino can be programmed w/ nothing mounted but the chip and
+the ISP header.
