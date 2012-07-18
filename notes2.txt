@@ -1,0 +1,87 @@
+Notes/todo for XOrduino2 design:
+.- drill second mounting hole
+.- drill skid hole
+   3mm hole, 1mm front front end, centered (53mm wide, center is 26.5mm)
+   make hole bigger to accomodate 6-32 screw: digikey 1903EK-ND
+   slightly longer would be better
+   existing holes are 3.2mm; .12598425"
+   24438K-ND is $0.4101 (qty 100), M3, 25mm long
+x- wire up L293
+x- wire up 7805
+.- wire up limit switches
+ - wire up optoisolators
+research TCRT1000, we only need 2-3mm now. slightly taller shoulder?
+downward looker? paint top of gear.
+ - servo connection?
+ - bidirectional led instead of ambient light sensor
+ - remove external pull-up, use internal pullup, change to 3.5mm jack
+   to be compatible w/ XO
+
+battery backup circuit:
+ dedicated: 	ICL7673CPAZ-ND ($1.40), 296-10879-1-ND ($1.50)
+http://www.linear.com/product/LTC4411
+LTC4411ES5#TRMPBF-ND ($3.12) linear says $1.66 qty 1000
+(see also LTC4410 w/ external FET)
+something like LP38693, the VEN signal can be tied to VIN
+ XXX but really want VEN = !VUSB
+
+better: just put diode between 5v regulator and 5v supply, run at 4.8V
+from battery, run at 5v w/ usb power. (or run at 3.3V from battery?)
+
+or even better: just run i/o at 4.5v when running from usb power?
+(schottkey diode between vusb and +5V)
+run everything from 6V from battery (no regulator)
+are there quad schottkey diodes? SD103ATW-FDICT-ND $0.2039 qty 100
+  (0.08 premium)
+
+ATmega32U4 uses 16mA max
+motor driver cuts out at 2.6V
+power option 1:
+ 4.5V battery, normal diode-OR, NJU7261U50-TE1CT-ND step up (1-5V) $0.40 qty 100
+               two diodes for 6V battery version
+               run VM from diode-OR voltage (ie, 3.9V or 5.8V)
+ needs 22uF cap x 2, 100uH inductor 587-2048-1-ND (50mA, $0.0665 qty 100)
+                                or  587-2055-1-ND (80mA, $0.0980 qty 100)
+    battery holder wire lead BC3AAW-ND $1.06 qty 100
+ 
+ alternatively 	1028-1077-1-ND (richtek RT9261A-50GB) is $0.65 qty 100
+  needs 100uH inductor, 1N5819 diode, and 22uF cap.
+
+new motor driver! 296-29434-1-ND ($2.204 qty 100)
+ (also keep an eye on 869-1287-1-ND ($1.7718 qty 100)
+                  and 296-28165-1-ND (DRV8830) )
+usb micro: $0.30320 SMD
+609-4050-1-ND $0.505 SMD more solderable.  no good thru-hole version
+
+to buy:
+ digikey:
+  wirewrap tool 	K105-ND
+  30 awg wire stripper JIC-2030-ND (pliers form, $9.10)
+                       K512-ND (cut and strip tool, $52.50)
+                       K503-ND ($34.60)
+  ATTINY861A-PU-ND
+  new photosensors
+    QRE1113GRCT-ND (smd)
+    QRE1113-ND (4-DIP)
+  3mm spacer? 24438K-ND
+    H744-ND (M3x12 screw)
+  more stackable headers?
+  usb micro connector 609-4050-1-ND
+  motor driver 296-29434-1-ND
+  3x Schottkey: SD103ATW-FDICT-ND
+  screw terminal A98334-ND
+  single schottkey for prototyping?
+   LSM115JE3/TR13CT-ND has Vf of 0.22 V
+  new 1/8" jack: CP1-3523N-ND
+ sparkfun:
+  tooth wheels?
+  flux pen
+  solder
+
+optosensor: consider:
+751-1031-ND $0.7424 (qty 100) -- original part
+QRE1113GRCT-ND $0.5838 (qty 100)
+475-1239-1-ND $1.2254 (qty 100) -- logic level out
+ambient light sensor
+1080-1020-ND $0.3024 (qty 100)
+
