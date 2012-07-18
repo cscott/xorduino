@@ -1,16 +1,17 @@
-Notes on v4:
+Notes on XOrduino v4 boards:
  - avoid tab on usb connector, move to body
  - N/C jumpers turned out N/O (scratch sensor board)
- - merge 5V and +5V nets
+.- merge 5V and +5V nets
  - C5/C7 too close together (and too close to C9) & need polarity marks
  - C11/C13 needs polarity mark (or to be unpolarized)
  - flip RN3?
  - audio jack footprints are wrong.  and drill holes overlap for top&bottom
  - just use tip and sleeve(gnd) on audio jack (leave ring(s) disconnected)
    use 1/8" instead of 3/32"?
+   digikey CP1-3523N-ND $0.39480 qty 100 (stereo, no switch)
  - right angle pot is right but don't need strain relief holes, need knob (shorter handle?)
- - mini USB jack silkscreen on wrong side & just a tiny bit too close
-   to pcb plug
+.- mini USB jack silkscreen on wrong side
+.- mini USB just a tiny bit too close to pcb plug
  - mounting hole clearances too small:
     
  - add front nose skid (near where audio jack currently sits?)
@@ -21,10 +22,17 @@ Notes on v4:
  - add breakoff tabs to thicken USB plug (by reset pin, two deep)
  - solder spot under AVR is unnecessary
  - male header strip should be female for arduino headers
+   1x S7004-ND (6 pin)
+   2x S4008-ND (non-stock) or S7006-ND (8 pin)
+   1x S7043-ND (10 pin) or S7008-ND (should be cheaper, but isn't)
  - ISP header needs pin 1 indication, label.
  - Yellow LEDs don't have a flat side!
+ - add LED polarity silkscreen
+ - remove solder mask on solder jumper center
+ - replace 2x7 shorting header w/ 1x7 signal header and array of
+   shorting jumpers
 
-NOTE THAT ATmega32u4 should be placed upside down.
+NOTE THAT ATmega32u4 should be placed upside down. (rotate it?)
 
 TESTED: xorduino can be programmed w/ nothing mounted but the chip and
 the ISP header.
