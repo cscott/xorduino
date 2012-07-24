@@ -16,6 +16,8 @@ downward looker? paint top of gear.
  - bidirectional led instead of ambient light sensor
  - remove external pull-up, use internal pullup, change to 3.5mm jack
    to be compatible w/ XO
+ - current limit should be 300-400mA per motor, change USB fuse to match
+   XO limit is 1.0-1.1A. (USB spec is 500mA, though)
 
 battery backup circuit:
  dedicated: 	ICL7673CPAZ-ND ($1.40), 296-10879-1-ND ($1.50)
@@ -83,5 +85,97 @@ optosensor: consider:
 QRE1113GRCT-ND $0.5838 (qty 100)
 475-1239-1-ND $1.2254 (qty 100) -- logic level out
 ambient light sensor
-1080-1020-ND $0.3024 (qty 100)
+1080-1019-ND $0.29760 (qty 100) good match for 50uA light current of original part
 
+--------------------
+Partlist
+
+Exported from XOrduino2.sch at 7/23/12 5:59 PM
+
+EAGLE Version 6.2.0 Copyright (c) 1988-2012 CadSoft
+
+Assembly variant: 
+
+Part     Value             Device               Package               Library                    Sheet DigiKey Package Price (qty 100)
+
+C1       18p               CAP0805              0805                  SparkFun-Passives          1 311-1102-1-ND 0805" $0.02860
+C2       18p               CAP0805              0805                  SparkFun-Passives          1
+C3       100n              CAP0805              0805                  SparkFun-Passives          1 311-1361-1-ND 0805" $0.01410
+C4       100n              CAP0805              0805                  SparkFun-Passives          1
+C5       100n              CAP0805              0805                  SparkFun-Passives          1
+C6       100n              CAP0805              0805                  SparkFun-Passives          1
+C7       100n              CAP0805              0805                  SparkFun-Passives          1
+C8       1uF               CAP0805              0805                  SparkFun-Passives          1 445-1589-2-ND 0805" $0.01150
+C9       1uF               CAP0805              0805                  SparkFun-Passives          1
+C10      0.22uF            CAP0805              0805                  SparkFun-Passives          1 587-1306-1-ND 0805" $0.03800
+C11      0.33uF            CAP0805              0805                  SparkFun-Passives          1 445-1356-1-ND 0805" $0.06300 (!)
+C12      10uF              CAP0805              0805                  SparkFun-Passives          2 445-1371-1-ND 0805" $0.04990
+C13      22uF              CAP1206              1206                  SparkFun-Passives          1 587-1356-1-ND 1206" $0.10000
+C14      22uF              CAP1206              1206                  SparkFun-Passives          2
+C15      0.01uF            CAP0805              0805                  SparkFun-Passives          2 490-1664-1-ND 0805" $0.01420
+D1       1N4148            DIODE1N4148          DIODE-1N4148          SparkFun-DiscreteSemi      1 1N4148FS-ND, 200mA  DO-35 $0.03690
+D2       1N4148            DIODE1N4148          DIODE-1N4148          SparkFun-DiscreteSemi      1
+D3       1A Schottkey      DIODE-SCHOTTKY_      SMA-DIODE             SparkFun-DiscreteSemi      2 641-1014-1-ND SMA  $0.15140
+D4       1A Schottkey      DIODE-SCHOTTKY_      SMA-DIODE             SparkFun-DiscreteSemi      2
+F1       0ZCC0110FF2C 1.1A L-EUL1812            L1812                 rcl                        1 507-1363-1-ND 1812" $0.16150
+H1       10x1F-H8.5        PINHD-1X10           1X10                  SmartPrj                   1
+H2       8x1F-H8.5         PINHD-1X8            1X08                  SmartPrj                   1
+H3       8x1F-H8.5         PINHD-1X8            1X08                  SmartPrj                   1
+H4       6x1F-H8.5         PINHD-1X6            1X06                  SmartPrj                   1
+H5       ICSP              PINHD-2X3            2X03                  SmartPrj                   1 609-3218-ND           $0.1778
+J1       2.5mm             AUDIO-JACK           MJ-3523-SMT           xorduino                   1 CP-3523MJCT-ND        $0.79610
+J2       2.5mm             AUDIO-JACK           MJ-3523-SMT           xorduino                   1
+J3       2.5mm             AUDIO-JACK           MJ-3523-SMT           xorduino                   1
+J4       2.5mm             AUDIO-JACK           MJ-3523-SMT           xorduino                   1
+J5       Batt In           M02PTH               1X02                  SparkFun-Connectors        2
+J6       MOT L             M023.5MM             SCREWTERMINAL-3.5MM-2 SparkFun                   2
+J7       MOT R             M023.5MM             SCREWTERMINAL-3.5MM-2 SparkFun                   2
+JP1      N/C               SOLDERJUMPERTRACE    SJ_2S-TRACE           SparkFun-Passives          2
+JP2      N/C               SOLDERJUMPERTRACE    SJ_2S-TRACE           SparkFun-Passives          1
+JP3      N/C               SOLDERJUMPERTRACE    SJ_2S-TRACE           SparkFun-Passives          1
+JP4      N/C               SOLDERJUMPERTRACE    SJ_2S-TRACE           SparkFun-Passives          1
+JP5      N/C               SOLDERJUMPERTRACE    SJ_2S-TRACE           SparkFun-Passives          1
+JP6      Sensor Routing    JP7QES               JP7QS                 xorduino                   1
+JP7      N/C               SOLDERJUMPERTRACE    SJ_2S-TRACE           SparkFun-Passives          1
+L1       MH2029-300Y       WE-CBF_0805          0805                  wuerth-elektronik          1 MH2029-300Y-ND    $0.0174 300 ohm bead ferrite (qty 4000)
+L2       MH2029-300Y       WE-CBF_0805          0805                  wuerth-elektronik          1
+L3       100uH             INDUCTOR1007         1007                  SparkFun-Passives          2 587-2055-1-ND (80mA) $0.0980
+LED1     L Yellow          LED3MM               LED3MM                led                        1 XXX look up LED w/ flat side
+LED2     TX Red            LED3MM               LED3MM                led                        1 754-1218-ND       $0.07150 3mm T1 red (XXX: SMT?)
+LED3     RX Red            LED3MM               LED3MM                led                        1
+LED4     ON Green          LED3MM               LED3MM                led                        1 754-1217-ND       $0.07150 3mm T1 green (XXX: SMT)
+LED5     FAULT Red         LED3MM               LED3MM                led                        2 754-1218-ND       $0.07150 3mm T1 red
+MIC1     MIC9.7MM          MIC9.7MM             MIC-9.7MM             SparkFun                   1 102-1721-ND       $0.56930 (XXX: cheaper option?)
+P1       10k               POT                  P091N                 xorduino                   1 987-1276-ND       $0.46
+Q1       ALS-PT204-6C/L177 ALS-PT204-6C/L177    LED3MM-KIT            xorduino                   1 1080-1019-ND      $0.29760
+R1       1M                RESISTOR0805-RES     0805                  SparkFun-Passives          1
+R2       2.2k              RESISTOR0805-RES     0805                  SparkFun-Passives          1
+R3       1k                RESISTOR0805-RES     0805                  SparkFun-Passives          2
+RN1      22                RESISTOR-ARRAYCRA06S CRA06S                xorduino                   1 CRA6S822CT-ND $0.01480 (4x)
+RN2      10k               RESISTOR-ARRAYCRA06S CRA06S                xorduino                   1
+RN3      1k                RESISTOR-ARRAYCRA06S CRA06S                xorduino                   1
+RN4      100k              RESISTOR-ARRAYCRA06S CRA06S                xorduino                   1
+RN5      100k              RESISTOR-ARRAYCRA06S CRA06S                xorduino                   2
+RN6      220               RESISTOR-ARRAYCRA06S CRA06S                xorduino                   2 CRA6S8220CT-ND $0.01480 (4x)
+RN7      1ohm 1/16W        4R-NEXB38V           EXB38V                resistor-dil               2 Y91R0CT-ND $0.03410 (4x1ohm)
+SW1      RESET             TAC_SWITCHPTH        TACTILE-PTH           SparkFun-Electromechanical 1 450-1652-ND       $0.1114
+SW2      6mm Button        TAC_SWITCHPTH        TACTILE-PTH           SparkFun-Electromechanical 1
+SW3      LEFT BUMPER       SWITCH-SPDTV1        SW-LEVER-V1           xorduino                   2 EG4935-ND $0.50140
+SW4      RIGHT BUMPER      SWITCH-SPDTV2        SW-LEVEL-V2           xorduino                   2 EG4936-ND $0.50140
+U1       ATMEGA32U4-XUAU   ATMEGA32U4-XUAU      TQFP44-PAD            SmartPrj                   1 ATMEGA32U4-AU-ND  $3.36840
+U2       LMV358            LMV358               SO08                  SparkFun                   1 296-9571-1-ND     $0.15 8-SOIC
+U3       NJU7261           NJU7261              SOT89-5               xorduino                   2 NJU7261U30-TE1CT-ND $0.40000
+U4       DRV8833PWP        DRV8833PWP           PWP16                 xorduino                   2 296-29434-1-ND $2.20400
+U5       QRE1113GR         QRE1113GR            QRE1113GR             xorduino                   2 QRE1113GRCT-ND $0.58380
+U6       QRE1113GR         QRE1113GR            QRE1113GR             xorduino                   2
+X1       USBPCB            USBPCB               USB-A-PCB             SparkFun-Connectors        1 n/a
+X2       USBMINIB          USBMINIB             USB-MB-H2             xorduino                   1 WM17115-ND        $1.1038 USB mini-B through hole
+X3       USBMICROB         USBMICROB            USB-MICROB            xorduino                   1 609-4050-1-ND (XXX check this)
+Y1       16MHz             CRYSTALHC49US        HC49US                SparkFun-FreqCtrl          1 CTX1085-ND        $0.2320
+Z1       CG0603MLC-05E     VARISTORCN0603       CT/CN0603             varistor                   1 CG0603MLC-05E-ND  $0.06916 5VDC 0603 ESD suppressor (qty 10,000)
+Z2       CG0603MLC-05E     VARISTORCN0603       CT/CN0603             varistor                   1
+misc:
+3mm spacer 24438K-ND
+screws H744-ND (M3x12 screw)
+screw terminals A98334-ND (?)
+battery holder wire lead BC3AAW-ND $1.06 qty 100
