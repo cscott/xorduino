@@ -20,19 +20,19 @@ x- bidirectional led instead of ambient light sensor
    XO limit is 1.0-1.1A. (USB spec is 500mA, though)
 .- no-hole version of bumper switch footprint
 .- switch to array of solder jumpers for A0-A5 routing
- - put via in solder jumper footprint?
+.- put via in solder jumper footprint?
 .- rotate motor power 90 degrees?
 .- via in switcher
 .- shift ICP jack to right
  - SMT LEDs? 0805, @ $0.06 red/green
  - look at diode placement
  - move switcher to front side?
- - add variant of usb micro w/ breaks out to vias?
+.- add variant of usb micro w/ breaks out to vias?
  - alt version of 3mm LED w/ straight line on one side
  - split current limit resistors
  - minimize # of solder jumpers
- - battery input is Vin, use something else (Vm) for wire-or'ed signal.
- - change width of polygons to non-zero (switcher done, h-bridge still to do)
+.- battery input is Vin, use something else (Vm) for wire-or'ed signal.
+.- change width of polygons to non-zero (switcher done, h-bridge still to do)
 
 battery backup circuit:
  dedicated: 	ICL7673CPAZ-ND ($1.40), 296-10879-1-ND ($1.50)
