@@ -31,6 +31,7 @@ downward looker? paint top of gear.
  - split current limit resistors
  - minimize # of solder jumpers
  - battery input is Vin, use something else (Vm) for wire-or'ed signal.
+ - change width of polygons to non-zero
 
 battery backup circuit:
  dedicated: 	ICL7673CPAZ-ND ($1.40), 296-10879-1-ND ($1.50)
