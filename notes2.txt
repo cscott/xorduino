@@ -12,7 +12,7 @@ x- wire up 7805
 .- wire up optoisolators
 research TCRT1000, we only need 2-3mm now. slightly taller shoulder?
 downward looker? paint top of gear.
- - servo connection? 4.8V servo
+.- servo connection? 4.8V servo
 x- bidirectional led instead of ambient light sensor
 .- remove external pull-up, use internal pullup, change to 3.5mm jack
    to be compatible w/ XO
@@ -24,15 +24,22 @@ x- bidirectional led instead of ambient light sensor
 .- rotate motor power 90 degrees?
 .- via in switcher
 .- shift ICP jack to right
- - SMT LEDs? 0805, @ $0.06 red/green
+.- SMT LEDs? 0805, @ $0.06 red/green
  - look at diode placement
- - move switcher to front side?
+.- move switcher to front side?
 .- add variant of usb micro w/ breaks out to vias?
- - alt version of 3mm LED w/ straight line on one side
+.- alt version of 3mm LED w/ straight line on one side
  - split current limit resistors
  - minimize # of solder jumpers
 .- battery input is Vin, use something else (Vm) for wire-or'ed signal.
 .- change width of polygons to non-zero (switcher done, h-bridge still to do)
+x- remove center dot on uC footprint
+.- fault LED SMT and placed next to resistor on top of bridge
+.- swap ISP and photosensor location
+.- fix usb micro broken out
+ - divide up tab area into 4 equal parts (2.1" tall, usb is .48")
+   measure width of router bit... looks like we only have .04" kerf =(
+ - bottom | top - seems to be best?
 
 battery backup circuit:
  dedicated: 	ICL7673CPAZ-ND ($1.40), 296-10879-1-ND ($1.50)
