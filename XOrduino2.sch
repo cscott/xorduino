@@ -12706,19 +12706,19 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <library name="xorduino">
 <packages>
 <package name="USB-MB-H2">
-<wire x1="-3.75" y1="3.9" x2="-3.75" y2="-3.9" width="0.127" layer="21"/>
-<wire x1="5.25" y1="3.9" x2="5.25" y2="-3.9" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="3.9" x2="5.25" y2="3.9" width="0.127" layer="21"/>
-<wire x1="-3.75" y1="-3.9" x2="5.25" y2="-3.9" width="0.127" layer="21"/>
-<wire x1="0.75" y1="3.5" x2="-3.25" y2="3" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="3" x2="-3.25" y2="2" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="2" x2="0.75" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.25" y1="-3.5" x2="-3.25" y2="-3" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="-3" x2="-3.25" y2="-2" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="-2" x2="1.25" y2="-1.5" width="0.127" layer="21"/>
-<wire x1="-3.25" y1="1.25" x2="1.75" y2="0.75" width="0.127" layer="21"/>
-<wire x1="1.75" y1="0.75" x2="1.75" y2="-0.75" width="0.127" layer="21"/>
-<wire x1="1.75" y1="-0.75" x2="-3.25" y2="-1.25" width="0.127" layer="21"/>
+<wire x1="-3.75" y1="3.9" x2="-3.75" y2="-3.9" width="0.127" layer="51"/>
+<wire x1="5.25" y1="3.9" x2="5.25" y2="-3.9" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="3.9" x2="5.25" y2="3.9" width="0.127" layer="51"/>
+<wire x1="-3.75" y1="-3.9" x2="5.25" y2="-3.9" width="0.127" layer="51"/>
+<wire x1="0.75" y1="3.5" x2="-3.25" y2="3" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="3" x2="-3.25" y2="2" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="2" x2="0.75" y2="1.5" width="0.127" layer="51"/>
+<wire x1="1.25" y1="-3.5" x2="-3.25" y2="-3" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-3" x2="-3.25" y2="-2" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="-2" x2="1.25" y2="-1.5" width="0.127" layer="51"/>
+<wire x1="-3.25" y1="1.25" x2="1.75" y2="0.75" width="0.127" layer="51"/>
+<wire x1="1.75" y1="0.75" x2="1.75" y2="-0.75" width="0.127" layer="51"/>
+<wire x1="1.75" y1="-0.75" x2="-3.25" y2="-1.25" width="0.127" layer="51"/>
 <pad name="VBUS" x="5.1" y="1.6" drill="0.8" diameter="1.143"/>
 <pad name="D+" x="5.1" y="0" drill="0.8" diameter="1.143"/>
 <pad name="GND" x="5.1" y="-1.6" drill="0.8" diameter="1.143"/>
@@ -12731,6 +12731,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <rectangle x1="3.25" y1="-4.4" x2="5.75" y2="-3" layer="43"/>
 <rectangle x1="-3.75" y1="-3.1" x2="-1.425" y2="3.1" layer="43"/>
 <rectangle x1="-1.425" y1="-2.325" x2="-0.65" y2="2.325" layer="43"/>
+<wire x1="1.965" y1="3.9" x2="5.25" y2="3.9" width="0.127" layer="21"/>
+<wire x1="1.965" y1="-3.9" x2="5.25" y2="-3.9" width="0.127" layer="21"/>
+<wire x1="5.25" y1="-2.45" x2="5.25" y2="-3.9" width="0.127" layer="21"/>
+<wire x1="5.25" y1="3.9" x2="5.25" y2="2.45" width="0.127" layer="21"/>
+<wire x1="-3.115" y1="3.9" x2="-1.735" y2="3.9" width="0.127" layer="21"/>
+<wire x1="-3.115" y1="-3.9" x2="-1.735" y2="-3.9" width="0.127" layer="21"/>
 </package>
 <package name="PWP16">
 <description>TI "PowerPAD" plastic small outline package.</description>
@@ -13312,12 +13318,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-3" y1="4" x2="3" y2="5" width="0.2032" layer="21"/>
 </package>
 <package name="SJ-2S-TRACE-NOCONFLICT">
-<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="51" curve="-90"/>
+<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="51" curve="-90"/>
+<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="51" curve="90"/>
+<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="51" curve="90"/>
+<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="51"/>
 <wire x1="-0.2286" y1="0" x2="0.2286" y2="0" width="0.254" layer="101"/>
 <smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" stop="no" cream="no"/>
 <smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" stop="no" cream="no"/>
@@ -13326,28 +13332,13 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <rectangle x1="-0.2032" y1="-0.635" x2="0.2032" y2="0.635" layer="29"/>
 <rectangle x1="-0.2032" y1="-0.635" x2="0.2032" y2="0.635" layer="41"/>
 </package>
-<package name="SJ-2S-TRACE">
-<description>Cuttable trace</description>
-<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="21" curve="-90"/>
-<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="21" curve="90"/>
-<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="21" curve="90"/>
-<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-0.2286" y1="0" x2="0.2286" y2="0" width="0.254" layer="1"/>
-<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" stop="no" cream="no"/>
-<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" stop="no" cream="no"/>
-<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
-<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.2032" y1="-0.635" x2="0.2032" y2="0.635" layer="29"/>
-</package>
 <package name="SJ-2S-BOT-TRACE-NOCONFLICT">
-<wire x1="-0.8255" y1="-1.016" x2="0.8255" y2="-1.016" width="0.2032" layer="22"/>
-<wire x1="-0.8255" y1="1.016" x2="-1.0795" y2="0.762" width="0.2032" layer="22" curve="90"/>
-<wire x1="1.0795" y1="0.762" x2="0.8255" y2="1.016" width="0.2032" layer="22" curve="90"/>
-<wire x1="1.0795" y1="-0.762" x2="0.8255" y2="-1.016" width="0.2032" layer="22" curve="-90"/>
-<wire x1="-0.8255" y1="-1.016" x2="-1.0795" y2="-0.762" width="0.2032" layer="22" curve="-90"/>
-<wire x1="0.8255" y1="1.016" x2="-0.8255" y2="1.016" width="0.2032" layer="22"/>
+<wire x1="-0.8255" y1="-1.016" x2="0.8255" y2="-1.016" width="0.2032" layer="52"/>
+<wire x1="-0.8255" y1="1.016" x2="-1.0795" y2="0.762" width="0.2032" layer="52" curve="90"/>
+<wire x1="1.0795" y1="0.762" x2="0.8255" y2="1.016" width="0.2032" layer="52" curve="90"/>
+<wire x1="1.0795" y1="-0.762" x2="0.8255" y2="-1.016" width="0.2032" layer="52" curve="-90"/>
+<wire x1="-0.8255" y1="-1.016" x2="-1.0795" y2="-0.762" width="0.2032" layer="52" curve="-90"/>
+<wire x1="0.8255" y1="1.016" x2="-0.8255" y2="1.016" width="0.2032" layer="52"/>
 <wire x1="-0.2286" y1="0" x2="0.2286" y2="0" width="0.254" layer="100"/>
 <smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="16" rot="R180" stop="no" cream="no"/>
 <smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="16" rot="R180" stop="no" cream="no"/>
@@ -13546,12 +13537,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <hole x="2.725" y="0" drill="1.2"/>
 </package>
 <package name="SJ-2S-BOT-TRACE-VIA-NOCONFLICT">
-<wire x1="-0.8255" y1="-1.016" x2="0.8255" y2="-1.016" width="0.2032" layer="22"/>
-<wire x1="-0.8255" y1="1.016" x2="-1.0795" y2="0.762" width="0.2032" layer="22" curve="90"/>
-<wire x1="1.0795" y1="0.762" x2="0.8255" y2="1.016" width="0.2032" layer="22" curve="90"/>
-<wire x1="1.0795" y1="-0.762" x2="0.8255" y2="-1.016" width="0.2032" layer="22" curve="-90"/>
-<wire x1="-0.8255" y1="-1.016" x2="-1.0795" y2="-0.762" width="0.2032" layer="22" curve="-90"/>
-<wire x1="0.8255" y1="1.016" x2="-0.8255" y2="1.016" width="0.2032" layer="22"/>
+<wire x1="-0.8255" y1="-1.016" x2="0.8255" y2="-1.016" width="0.2032" layer="52"/>
+<wire x1="-0.8255" y1="1.016" x2="-1.0795" y2="0.762" width="0.2032" layer="52" curve="90"/>
+<wire x1="1.0795" y1="0.762" x2="0.8255" y2="1.016" width="0.2032" layer="52" curve="90"/>
+<wire x1="1.0795" y1="-0.762" x2="0.8255" y2="-1.016" width="0.2032" layer="52" curve="-90"/>
+<wire x1="-0.8255" y1="-1.016" x2="-1.0795" y2="-0.762" width="0.2032" layer="52" curve="-90"/>
+<wire x1="0.8255" y1="1.016" x2="-0.8255" y2="1.016" width="0.2032" layer="52"/>
 <wire x1="-0.2286" y1="0" x2="0.2286" y2="0" width="0.254" layer="100"/>
 <smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="16" rot="R180" stop="no" cream="no"/>
 <smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="16" rot="R180" stop="no" cream="no"/>
@@ -13624,6 +13615,21 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <vertex x="1.27" y="0.447" curve="-90"/>
 <vertex x="1.7119" y="-0.0101" curve="-90.012967"/>
 </polygon>
+</package>
+<package name="SJ-2S-TRACE">
+<description>Cuttable trace</description>
+<wire x1="0.8255" y1="-1.016" x2="-0.8255" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="0.8255" y1="1.016" x2="1.0795" y2="0.762" width="0.2032" layer="51" curve="-90"/>
+<wire x1="-1.0795" y1="0.762" x2="-0.8255" y2="1.016" width="0.2032" layer="51" curve="-90"/>
+<wire x1="-1.0795" y1="-0.762" x2="-0.8255" y2="-1.016" width="0.2032" layer="51" curve="90"/>
+<wire x1="0.8255" y1="-1.016" x2="1.0795" y2="-0.762" width="0.2032" layer="51" curve="90"/>
+<wire x1="-0.8255" y1="1.016" x2="0.8255" y2="1.016" width="0.2032" layer="51"/>
+<wire x1="-0.2286" y1="0" x2="0.2286" y2="0" width="0.254" layer="1"/>
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="1" stop="no" cream="no"/>
+<text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2032" y1="-0.635" x2="0.2032" y2="0.635" layer="29"/>
 </package>
 </packages>
 <symbols>
@@ -14908,19 +14914,19 @@ Source: RS Component / Phycomp</description>
 </variantdefs>
 <classes>
 <class number="0" name="default" width="0.2032" drill="0.4064">
-<clearance class="0" value="0.254"/>
+<clearance class="0" value="0.2032"/>
 </class>
 <class number="1" name="power" width="0.2032" drill="0.4064">
-<clearance class="1" value="0.254"/>
+<clearance class="1" value="0.2032"/>
 </class>
 <class number="2" name="gnd" width="0.2032" drill="0.4064">
-<clearance class="2" value="0.254"/>
+<clearance class="2" value="0.2032"/>
 </class>
 <class number="3" name="usbvcc" width="0.2032" drill="0.4064">
-<clearance class="3" value="0.254"/>
+<clearance class="3" value="0.2032"/>
 </class>
 <class number="4" name="aref" width="0.2032" drill="0.4064">
-<clearance class="4" value="0.254"/>
+<clearance class="4" value="0.2032"/>
 </class>
 </classes>
 <parts>
@@ -16975,8 +16981,8 @@ Source: RS Component / Phycomp</description>
 <errors>
 <approved hash="101,1,-53.34,-45.72,RN1A,2,,,,"/>
 <approved hash="101,1,-63.5,-45.72,RN1A,1,,,,"/>
-<approved hash="101,1,-53.34,-53.34,RN1D,2,,,,"/>
-<approved hash="101,1,-63.5,-53.34,RN1D,1,,,,"/>
+<approved hash="101,1,-53.34,-53.34,RN1B,2,,,,"/>
+<approved hash="101,1,-63.5,-53.34,RN1B,1,,,,"/>
 <approved hash="101,1,-53.34,-60.96,RN4A,2,,,,"/>
 <approved hash="101,1,-63.5,-60.96,RN4A,1,,,,"/>
 <approved hash="101,2,177.8,58.42,RN6C,2,,,,"/>
@@ -16989,7 +16995,7 @@ Source: RS Component / Phycomp</description>
 <approved hash="104,1,12.7,88.9,U1,GND1,GND,,,"/>
 <approved hash="104,1,12.7,86.36,U1,GND2,GND,,,"/>
 <approved hash="104,1,12.7,124.46,U1,GND3,AGND,,,"/>
-<approved hash="104,1,12.7,50.8,U1,PAD,GND,,,"/>
+<approved hash="204,1,12.7,50.8,U1,PAD,,,,"/>
 <approved hash="104,1,12.7,81.28,U1,UVCC,+5V,,,"/>
 <approved hash="104,1,12.7,93.98,U1,VCC,+5V,,,"/>
 <approved hash="104,1,12.7,127,U1,VCC1,+5V,,,"/>
