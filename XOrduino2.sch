@@ -15171,6 +15171,7 @@ Source: RS Component / Phycomp</description>
 <text x="73.66" y="17.78" size="5.08" layer="91">B</text>
 <text x="73.66" y="-5.08" size="5.08" layer="91">C</text>
 <text x="35.56" y="-5.08" size="5.08" layer="91">D</text>
+<text x="-50.8" y="142.24" size="1.778" layer="91">XXX: C4 optional, not near power pins</text>
 </plain>
 <instances>
 <instance part="H5" gate="A" x="-58.42" y="165.1" smashed="yes">
