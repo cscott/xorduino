@@ -12928,177 +12928,6 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <pad name="2" x="2" y="-0.9" drill="0.8"/>
 <wire x1="0.35" y1="1.45" x2="0.35" y2="-1.45" width="0.127" layer="51" style="shortdash"/>
 </package>
-<package name="USB-MICROB">
-<description>FCI Micro-USB B receptacle, product 10103594-0001 LF.</description>
-<wire x1="-3.4" y1="-2.2" x2="-3" y2="-2.2" width="0.127" layer="51"/>
-<wire x1="3" y1="-2.2" x2="3.4" y2="-2.2" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-2.2" x2="-3.4" y2="-1.7" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-1.7" x2="-3.4" y2="2.8" width="0.127" layer="51"/>
-<wire x1="3.4" y1="2.8" x2="2.2" y2="2.8" width="0.127" layer="51"/>
-<wire x1="3.4" y1="2.8" x2="3.4" y2="-1.7" width="0.127" layer="51"/>
-<wire x1="3.4" y1="-1.7" x2="3.4" y2="-2.2" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-1.7" x2="3.4" y2="-1.7" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="-1.7" x2="3.4" y2="-1.7" width="0.2032" layer="21"/>
-<wire x1="-2.2" y1="1.4" x2="2.2" y2="1.4" width="0.127" layer="51"/>
-<wire x1="2.2" y1="1.4" x2="2.2" y2="2.8" width="0.127" layer="51"/>
-<wire x1="-2.2" y1="1.4" x2="-2.2" y2="2.8" width="0.127" layer="51"/>
-<wire x1="-3.4" y1="2.8" x2="-2.2" y2="2.8" width="0.127" layer="51"/>
-<wire x1="-1.85" y1="1.4" x2="1.85" y2="1.4" width="0.2032" layer="21"/>
-<wire x1="-3.4" y1="-2.2" x2="-4" y2="-2.8" width="0.2032" layer="51"/>
-<wire x1="3.4" y1="-2.2" x2="4" y2="-2.8" width="0.2032" layer="51"/>
-<wire x1="-3" y1="-2.2" x2="-3" y2="-2.6" width="0.127" layer="51"/>
-<wire x1="-2.8" y1="-2.85" x2="2.75" y2="-2.85" width="0.127" layer="51"/>
-<wire x1="3" y1="-2.65" x2="3" y2="-2.2" width="0.127" layer="51"/>
-<wire x1="-3" y1="-2.6" x2="-2.8" y2="-2.85" width="0.127" layer="51" curve="84.547378"/>
-<wire x1="2.75" y1="-2.85" x2="3" y2="-2.65" width="0.127" layer="51" curve="84.547378"/>
-<smd name="VBUS" x="-1.3" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
-<smd name="GND" x="1.3" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
-<smd name="D-" x="-0.65" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
-<smd name="D+" x="0" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
-<smd name="ID" x="0.65" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
-<smd name="MT1" x="-0.9625" y="-0.25" dx="1.425" dy="2.5" layer="1"/>
-<smd name="MT2" x="0.9625" y="-0.25" dx="1.425" dy="2.5" layer="1"/>
-<text x="-1.6" y="-0.4" size="0.762" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.225" size="0.762" layer="27">&gt;VALUE</text>
-<pad name="P$1" x="-2.425" y="3.03" drill="1.05" diameter="1.05" shape="square" thermals="no"/>
-<pad name="P$2" x="2.425" y="3.03" drill="1.05" diameter="1.05" shape="square" thermals="no"/>
-<rectangle x1="-3.9" y1="2.3" x2="-1.9" y2="3.76" layer="1"/>
-<rectangle x1="1.9" y1="2.3" x2="3.9" y2="3.76" layer="1"/>
-<rectangle x1="1.9" y1="2.3" x2="3.9" y2="3.76" layer="16" rot="R180"/>
-<rectangle x1="-3.9" y1="2.3" x2="-1.9" y2="3.76" layer="16" rot="R180"/>
-<rectangle x1="-3.9" y1="2.3" x2="-1.9" y2="3.76" layer="31"/>
-<rectangle x1="1.9" y1="2.3" x2="3.9" y2="3.76" layer="31"/>
-<rectangle x1="1.9" y1="2.3" x2="3.9" y2="3.76" layer="32" rot="R180"/>
-<rectangle x1="-3.9" y1="2.3" x2="-1.9" y2="3.76" layer="32" rot="R180"/>
-<rectangle x1="1.8" y1="2.2" x2="4" y2="3.86" layer="29"/>
-<rectangle x1="1.8" y1="2.2" x2="4" y2="3.86" layer="30"/>
-<rectangle x1="-4" y1="2.2" x2="-1.8" y2="3.86" layer="29"/>
-<rectangle x1="-4" y1="2.2" x2="-1.8" y2="3.86" layer="30"/>
-<pad name="P$3" x="-2.725" y="0" drill="1.2" diameter="1.3" shape="square"/>
-<pad name="P$4" x="2.725" y="0" drill="1.2" diameter="1.3" shape="square"/>
-<wire x1="-3.4" y1="-1.7" x2="-3.4" y2="-1.2" width="0.2032" layer="21"/>
-<wire x1="3.4" y1="-1.7" x2="3.4" y2="-1.2" width="0.2032" layer="21"/>
-<polygon width="0.2" layer="29">
-<vertex x="-2.075" y="2.05"/>
-<vertex x="-3.9" y="2.05"/>
-<vertex x="-3.9" y="1.35"/>
-<vertex x="-3.375" y="1.35"/>
-<vertex x="-3.375" y="-0.7" curve="90"/>
-<vertex x="-2.975" y="-1.1"/>
-<vertex x="-2.475" y="-1.1" curve="90"/>
-<vertex x="-2.075" y="-0.7"/>
-</polygon>
-<polygon width="0.2" layer="30">
-<vertex x="-2.075" y="2.05"/>
-<vertex x="-3.9" y="2.05"/>
-<vertex x="-3.9" y="1.35"/>
-<vertex x="-3.375" y="1.35"/>
-<vertex x="-3.375" y="-0.7" curve="90"/>
-<vertex x="-2.975" y="-1.1"/>
-<vertex x="-2.475" y="-1.1" curve="90"/>
-<vertex x="-2.075" y="-0.7"/>
-</polygon>
-<polygon width="0.2" layer="29">
-<vertex x="2.075" y="2.05"/>
-<vertex x="3.9" y="2.05"/>
-<vertex x="3.9" y="1.35"/>
-<vertex x="3.375" y="1.35"/>
-<vertex x="3.375" y="-0.7" curve="-90"/>
-<vertex x="2.975" y="-1.1"/>
-<vertex x="2.475" y="-1.1" curve="-90"/>
-<vertex x="2.075" y="-0.7"/>
-</polygon>
-<polygon width="0.2" layer="30">
-<vertex x="2.075" y="2.05"/>
-<vertex x="3.9" y="2.05"/>
-<vertex x="3.9" y="1.35"/>
-<vertex x="3.375" y="1.35"/>
-<vertex x="3.375" y="-0.7" curve="-90"/>
-<vertex x="2.975" y="-1.1"/>
-<vertex x="2.475" y="-1.1" curve="-90"/>
-<vertex x="2.075" y="-0.7"/>
-</polygon>
-<polygon width="0.1" layer="32">
-<vertex x="2.125" y="2"/>
-<vertex x="3.85" y="2"/>
-<vertex x="3.85" y="1.4"/>
-<vertex x="3.325" y="1.4"/>
-<vertex x="3.325" y="-0.65" curve="-90"/>
-<vertex x="2.925" y="-1.05"/>
-<vertex x="2.525" y="-1.05" curve="-90"/>
-<vertex x="2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="1">
-<vertex x="2.125" y="2"/>
-<vertex x="3.85" y="2"/>
-<vertex x="3.85" y="1.4"/>
-<vertex x="3.325" y="1.4"/>
-<vertex x="3.325" y="-0.65" curve="-90"/>
-<vertex x="2.925" y="-1.05"/>
-<vertex x="2.525" y="-1.05" curve="-90"/>
-<vertex x="2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="16">
-<vertex x="2.125" y="2"/>
-<vertex x="3.85" y="2"/>
-<vertex x="3.85" y="1.4"/>
-<vertex x="3.325" y="1.4"/>
-<vertex x="3.325" y="-0.65" curve="-90"/>
-<vertex x="2.925" y="-1.05"/>
-<vertex x="2.525" y="-1.05" curve="-90"/>
-<vertex x="2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="1">
-<vertex x="-2.125" y="2"/>
-<vertex x="-3.85" y="2"/>
-<vertex x="-3.85" y="1.4"/>
-<vertex x="-3.325" y="1.4"/>
-<vertex x="-3.325" y="-0.65" curve="90"/>
-<vertex x="-2.925" y="-1.05"/>
-<vertex x="-2.525" y="-1.05" curve="90"/>
-<vertex x="-2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="16">
-<vertex x="-2.125" y="2"/>
-<vertex x="-3.85" y="2"/>
-<vertex x="-3.85" y="1.4"/>
-<vertex x="-3.325" y="1.4"/>
-<vertex x="-3.325" y="-0.65" curve="90"/>
-<vertex x="-2.925" y="-1.05"/>
-<vertex x="-2.525" y="-1.05" curve="90"/>
-<vertex x="-2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="31">
-<vertex x="2.125" y="2"/>
-<vertex x="3.85" y="2"/>
-<vertex x="3.85" y="1.4"/>
-<vertex x="3.325" y="1.4"/>
-<vertex x="3.325" y="-0.65" curve="-90"/>
-<vertex x="2.925" y="-1.05"/>
-<vertex x="2.525" y="-1.05" curve="-90"/>
-<vertex x="2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="32">
-<vertex x="-2.125" y="2"/>
-<vertex x="-3.85" y="2"/>
-<vertex x="-3.85" y="1.4"/>
-<vertex x="-3.325" y="1.4"/>
-<vertex x="-3.325" y="-0.65" curve="90"/>
-<vertex x="-2.925" y="-1.05"/>
-<vertex x="-2.525" y="-1.05" curve="90"/>
-<vertex x="-2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="31">
-<vertex x="-2.125" y="2"/>
-<vertex x="-3.85" y="2"/>
-<vertex x="-3.85" y="1.4"/>
-<vertex x="-3.325" y="1.4"/>
-<vertex x="-3.325" y="-0.65" curve="90"/>
-<vertex x="-2.925" y="-1.05"/>
-<vertex x="-2.525" y="-1.05" curve="90"/>
-<vertex x="-2.125" y="-0.65"/>
-</polygon>
-</package>
 <package name="SOT89-5">
 <description>5-pin variant of SOT89 package.</description>
 <wire x1="2.3" y1="1.3" x2="2.3" y2="-1.3" width="0.2032" layer="21"/>
@@ -13433,92 +13262,12 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <vertex x="2.475" y="-1.1" curve="-90"/>
 <vertex x="2.075" y="-0.7"/>
 </polygon>
-<polygon width="0.1" layer="32">
-<vertex x="2.125" y="2"/>
-<vertex x="3.85" y="2"/>
-<vertex x="3.85" y="1.4"/>
-<vertex x="3.325" y="1.4"/>
-<vertex x="3.325" y="-0.65" curve="-90"/>
-<vertex x="2.925" y="-1.05"/>
-<vertex x="2.525" y="-1.05" curve="-90"/>
-<vertex x="2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="1">
-<vertex x="2.125" y="2"/>
-<vertex x="3.85" y="2"/>
-<vertex x="3.85" y="1.4"/>
-<vertex x="3.325" y="1.4"/>
-<vertex x="3.325" y="-0.65" curve="-90"/>
-<vertex x="2.925" y="-1.05"/>
-<vertex x="2.525" y="-1.05" curve="-90"/>
-<vertex x="2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="16">
-<vertex x="2.125" y="2"/>
-<vertex x="3.85" y="2"/>
-<vertex x="3.85" y="1.4"/>
-<vertex x="3.325" y="1.4"/>
-<vertex x="3.325" y="-0.65" curve="-90"/>
-<vertex x="2.925" y="-1.05"/>
-<vertex x="2.525" y="-1.05" curve="-90"/>
-<vertex x="2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="1">
-<vertex x="-2.125" y="2"/>
-<vertex x="-3.85" y="2"/>
-<vertex x="-3.85" y="1.4"/>
-<vertex x="-3.325" y="1.4"/>
-<vertex x="-3.325" y="-0.65" curve="90"/>
-<vertex x="-2.925" y="-1.05"/>
-<vertex x="-2.525" y="-1.05" curve="90"/>
-<vertex x="-2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="16">
-<vertex x="-2.125" y="2"/>
-<vertex x="-3.85" y="2"/>
-<vertex x="-3.85" y="1.4"/>
-<vertex x="-3.325" y="1.4"/>
-<vertex x="-3.325" y="-0.65" curve="90"/>
-<vertex x="-2.925" y="-1.05"/>
-<vertex x="-2.525" y="-1.05" curve="90"/>
-<vertex x="-2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="31">
-<vertex x="2.125" y="2"/>
-<vertex x="3.85" y="2"/>
-<vertex x="3.85" y="1.4"/>
-<vertex x="3.325" y="1.4"/>
-<vertex x="3.325" y="-0.65" curve="-90"/>
-<vertex x="2.925" y="-1.05"/>
-<vertex x="2.525" y="-1.05" curve="-90"/>
-<vertex x="2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="32">
-<vertex x="-2.125" y="2"/>
-<vertex x="-3.85" y="2"/>
-<vertex x="-3.85" y="1.4"/>
-<vertex x="-3.325" y="1.4"/>
-<vertex x="-3.325" y="-0.65" curve="90"/>
-<vertex x="-2.925" y="-1.05"/>
-<vertex x="-2.525" y="-1.05" curve="90"/>
-<vertex x="-2.125" y="-0.65"/>
-</polygon>
-<polygon width="0.1" layer="31">
-<vertex x="-2.125" y="2"/>
-<vertex x="-3.85" y="2"/>
-<vertex x="-3.85" y="1.4"/>
-<vertex x="-3.325" y="1.4"/>
-<vertex x="-3.325" y="-0.65" curve="90"/>
-<vertex x="-2.925" y="-1.05"/>
-<vertex x="-2.525" y="-1.05" curve="90"/>
-<vertex x="-2.125" y="-0.65"/>
-</polygon>
 <wire x1="0" y1="2.825" x2="0" y2="5.08" width="0.2032" layer="1"/>
-<pad name="D+_VIA" x="0" y="5.08" drill="0.8" stop="no"/>
-<pad name="D-_VIA" x="-1.6256" y="5.2" drill="0.8" stop="no"/>
-<pad name="VBUS_VIA" x="-3.2512" y="5.08" drill="0.8" stop="no"/>
-<pad name="ID_VIA" x="1.6256" y="5.2" drill="0.8" stop="no"/>
-<pad name="GND_VIA" x="3.2512" y="5.08" drill="0.8" stop="no"/>
+<pad name="D+_VIA" x="0" y="5.08" drill="0.5588" diameter="1.0668" stop="no"/>
+<pad name="D-_VIA" x="-1.6256" y="5.2" drill="0.5588" diameter="1.0668" stop="no"/>
+<pad name="VBUS_VIA" x="-3.2512" y="5.08" drill="0.5588" diameter="1.0668" stop="no"/>
+<pad name="ID_VIA" x="1.6256" y="5.2" drill="0.5588" diameter="1.0668" stop="no"/>
+<pad name="GND_VIA" x="3.2512" y="5.08" drill="0.5588" diameter="1.0668" stop="no"/>
 <hole x="-2.425" y="3.03" drill="1.05"/>
 <hole x="2.425" y="3.03" drill="1.05"/>
 <wire x1="-1.6256" y1="5.2" x2="-0.65" y2="4.2672" width="0.25" layer="1"/>
@@ -13535,6 +13284,86 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="1.22" y1="3.6576" x2="1.3" y2="2.825" width="0.21" layer="1"/>
 <hole x="-2.725" y="0" drill="1.2"/>
 <hole x="2.725" y="0" drill="1.2"/>
+<polygon width="0.4" layer="32">
+<vertex x="-2.275" y="1.85"/>
+<vertex x="-3.7" y="1.85"/>
+<vertex x="-3.7" y="1.55"/>
+<vertex x="-3.175" y="1.55"/>
+<vertex x="-3.175" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-0.9"/>
+<vertex x="-2.475" y="-0.9" curve="90"/>
+<vertex x="-2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="1">
+<vertex x="-2.275" y="1.85"/>
+<vertex x="-3.7" y="1.85"/>
+<vertex x="-3.7" y="1.55"/>
+<vertex x="-3.175" y="1.55"/>
+<vertex x="-3.175" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-0.9"/>
+<vertex x="-2.475" y="-0.9" curve="90"/>
+<vertex x="-2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="16">
+<vertex x="-2.275" y="1.85"/>
+<vertex x="-3.7" y="1.85"/>
+<vertex x="-3.7" y="1.55"/>
+<vertex x="-3.175" y="1.55"/>
+<vertex x="-3.175" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-0.9"/>
+<vertex x="-2.475" y="-0.9" curve="90"/>
+<vertex x="-2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="1">
+<vertex x="2.275" y="1.85"/>
+<vertex x="3.7" y="1.85"/>
+<vertex x="3.7" y="1.55"/>
+<vertex x="3.175" y="1.55"/>
+<vertex x="3.175" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-0.9"/>
+<vertex x="2.475" y="-0.9" curve="-90"/>
+<vertex x="2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="16">
+<vertex x="2.275" y="1.85"/>
+<vertex x="3.7" y="1.85"/>
+<vertex x="3.7" y="1.55"/>
+<vertex x="3.175" y="1.55"/>
+<vertex x="3.175" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-0.9"/>
+<vertex x="2.475" y="-0.9" curve="-90"/>
+<vertex x="2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="31">
+<vertex x="-2.275" y="1.85"/>
+<vertex x="-3.7" y="1.85"/>
+<vertex x="-3.7" y="1.55"/>
+<vertex x="-3.175" y="1.55"/>
+<vertex x="-3.175" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-0.9"/>
+<vertex x="-2.475" y="-0.9" curve="90"/>
+<vertex x="-2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="32">
+<vertex x="2.275" y="1.85"/>
+<vertex x="3.7" y="1.85"/>
+<vertex x="3.7" y="1.55"/>
+<vertex x="3.175" y="1.55"/>
+<vertex x="3.175" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-0.9"/>
+<vertex x="2.475" y="-0.9" curve="-90"/>
+<vertex x="2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="31">
+<vertex x="2.275" y="1.85"/>
+<vertex x="3.7" y="1.85"/>
+<vertex x="3.7" y="1.55"/>
+<vertex x="3.175" y="1.55"/>
+<vertex x="3.175" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-0.9"/>
+<vertex x="2.475" y="-0.9" curve="-90"/>
+<vertex x="2.275" y="-0.7"/>
+</polygon>
 </package>
 <package name="SJ-2S-BOT-TRACE-VIA-NOCONFLICT">
 <wire x1="-0.8255" y1="-1.016" x2="0.8255" y2="-1.016" width="0.2032" layer="52"/>
@@ -13630,6 +13459,177 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <text x="-0.9525" y="1.27" size="0.4064" layer="25">&gt;NAME</text>
 <text x="-0.9525" y="-1.651" size="0.4064" layer="27">&gt;VALUE</text>
 <rectangle x1="-0.2032" y1="-0.635" x2="0.2032" y2="0.635" layer="29"/>
+</package>
+<package name="USB-MICROB">
+<description>FCI Micro-USB B receptacle, product 10103594-0001 LF.</description>
+<wire x1="-3.4" y1="-2.2" x2="-3" y2="-2.2" width="0.127" layer="51"/>
+<wire x1="3" y1="-2.2" x2="3.4" y2="-2.2" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-2.2" x2="-3.4" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-1.7" x2="-3.4" y2="2.8" width="0.127" layer="51"/>
+<wire x1="3.4" y1="2.8" x2="2.2" y2="2.8" width="0.127" layer="51"/>
+<wire x1="3.4" y1="2.8" x2="3.4" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="3.4" y1="-1.7" x2="3.4" y2="-2.2" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-1.7" x2="3.4" y2="-1.7" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="-1.7" x2="3.4" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-2.2" y1="1.4" x2="2.2" y2="1.4" width="0.127" layer="51"/>
+<wire x1="2.2" y1="1.4" x2="2.2" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-2.2" y1="1.4" x2="-2.2" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-3.4" y1="2.8" x2="-2.2" y2="2.8" width="0.127" layer="51"/>
+<wire x1="-1.85" y1="1.4" x2="1.85" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-2.2" x2="-4" y2="-2.8" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="-2.2" x2="4" y2="-2.8" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-2.2" x2="-3" y2="-2.6" width="0.127" layer="51"/>
+<wire x1="-2.8" y1="-2.85" x2="2.75" y2="-2.85" width="0.127" layer="51"/>
+<wire x1="3" y1="-2.65" x2="3" y2="-2.2" width="0.127" layer="51"/>
+<wire x1="-3" y1="-2.6" x2="-2.8" y2="-2.85" width="0.127" layer="51" curve="84.547378"/>
+<wire x1="2.75" y1="-2.85" x2="3" y2="-2.65" width="0.127" layer="51" curve="84.547378"/>
+<smd name="VBUS" x="-1.3" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="GND" x="1.3" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="D-" x="-0.65" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="D+" x="0" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="ID" x="0.65" y="2.825" dx="1.75" dy="0.4" layer="1" rot="R90"/>
+<smd name="MT1" x="-0.9625" y="-0.25" dx="1.425" dy="2.5" layer="1"/>
+<smd name="MT2" x="0.9625" y="-0.25" dx="1.425" dy="2.5" layer="1"/>
+<text x="-1.6" y="-0.4" size="0.762" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.225" size="0.762" layer="27">&gt;VALUE</text>
+<pad name="P$1" x="-2.425" y="3.03" drill="1.05" diameter="1.05" shape="square" thermals="no"/>
+<pad name="P$2" x="2.425" y="3.03" drill="1.05" diameter="1.05" shape="square" thermals="no"/>
+<rectangle x1="-3.9" y1="2.3" x2="-1.9" y2="3.76" layer="1"/>
+<rectangle x1="1.9" y1="2.3" x2="3.9" y2="3.76" layer="1"/>
+<rectangle x1="1.9" y1="2.3" x2="3.9" y2="3.76" layer="16" rot="R180"/>
+<rectangle x1="-3.9" y1="2.3" x2="-1.9" y2="3.76" layer="16" rot="R180"/>
+<rectangle x1="-3.9" y1="2.3" x2="-1.9" y2="3.76" layer="31"/>
+<rectangle x1="1.9" y1="2.3" x2="3.9" y2="3.76" layer="31"/>
+<rectangle x1="1.9" y1="2.3" x2="3.9" y2="3.76" layer="32" rot="R180"/>
+<rectangle x1="-3.9" y1="2.3" x2="-1.9" y2="3.76" layer="32" rot="R180"/>
+<rectangle x1="1.8" y1="2.2" x2="4" y2="3.86" layer="29"/>
+<rectangle x1="1.8" y1="2.2" x2="4" y2="3.86" layer="30"/>
+<rectangle x1="-4" y1="2.2" x2="-1.8" y2="3.86" layer="29"/>
+<rectangle x1="-4" y1="2.2" x2="-1.8" y2="3.86" layer="30"/>
+<pad name="P$3" x="-2.725" y="0" drill="1.2" diameter="1.3" shape="square"/>
+<pad name="P$4" x="2.725" y="0" drill="1.2" diameter="1.3" shape="square"/>
+<wire x1="-3.4" y1="-1.7" x2="-3.4" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="-1.7" x2="3.4" y2="-1.2" width="0.2032" layer="21"/>
+<polygon width="0.2" layer="29">
+<vertex x="-2.075" y="2.05"/>
+<vertex x="-3.9" y="2.05"/>
+<vertex x="-3.9" y="1.35"/>
+<vertex x="-3.375" y="1.35"/>
+<vertex x="-3.375" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-1.1"/>
+<vertex x="-2.475" y="-1.1" curve="90"/>
+<vertex x="-2.075" y="-0.7"/>
+</polygon>
+<polygon width="0.2" layer="30">
+<vertex x="-2.075" y="2.05"/>
+<vertex x="-3.9" y="2.05"/>
+<vertex x="-3.9" y="1.35"/>
+<vertex x="-3.375" y="1.35"/>
+<vertex x="-3.375" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-1.1"/>
+<vertex x="-2.475" y="-1.1" curve="90"/>
+<vertex x="-2.075" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="32">
+<vertex x="-2.275" y="1.85"/>
+<vertex x="-3.7" y="1.85"/>
+<vertex x="-3.7" y="1.55"/>
+<vertex x="-3.175" y="1.55"/>
+<vertex x="-3.175" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-0.9"/>
+<vertex x="-2.475" y="-0.9" curve="90"/>
+<vertex x="-2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="1">
+<vertex x="-2.275" y="1.85"/>
+<vertex x="-3.7" y="1.85"/>
+<vertex x="-3.7" y="1.55"/>
+<vertex x="-3.175" y="1.55"/>
+<vertex x="-3.175" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-0.9"/>
+<vertex x="-2.475" y="-0.9" curve="90"/>
+<vertex x="-2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="16">
+<vertex x="-2.275" y="1.85"/>
+<vertex x="-3.7" y="1.85"/>
+<vertex x="-3.7" y="1.55"/>
+<vertex x="-3.175" y="1.55"/>
+<vertex x="-3.175" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-0.9"/>
+<vertex x="-2.475" y="-0.9" curve="90"/>
+<vertex x="-2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="31">
+<vertex x="-2.275" y="1.85"/>
+<vertex x="-3.7" y="1.85"/>
+<vertex x="-3.7" y="1.55"/>
+<vertex x="-3.175" y="1.55"/>
+<vertex x="-3.175" y="-0.7" curve="90"/>
+<vertex x="-2.975" y="-0.9"/>
+<vertex x="-2.475" y="-0.9" curve="90"/>
+<vertex x="-2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.2" layer="30">
+<vertex x="2.075" y="2.05"/>
+<vertex x="3.9" y="2.05"/>
+<vertex x="3.9" y="1.35"/>
+<vertex x="3.375" y="1.35"/>
+<vertex x="3.375" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-1.1"/>
+<vertex x="2.475" y="-1.1" curve="-90"/>
+<vertex x="2.075" y="-0.7"/>
+</polygon>
+<polygon width="0.2" layer="29">
+<vertex x="2.075" y="2.05"/>
+<vertex x="3.9" y="2.05"/>
+<vertex x="3.9" y="1.35"/>
+<vertex x="3.375" y="1.35"/>
+<vertex x="3.375" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-1.1"/>
+<vertex x="2.475" y="-1.1" curve="-90"/>
+<vertex x="2.075" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="31">
+<vertex x="2.275" y="1.85"/>
+<vertex x="3.7" y="1.85"/>
+<vertex x="3.7" y="1.55"/>
+<vertex x="3.175" y="1.55"/>
+<vertex x="3.175" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-0.9"/>
+<vertex x="2.475" y="-0.9" curve="-90"/>
+<vertex x="2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="16">
+<vertex x="2.275" y="1.85"/>
+<vertex x="3.7" y="1.85"/>
+<vertex x="3.7" y="1.55"/>
+<vertex x="3.175" y="1.55"/>
+<vertex x="3.175" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-0.9"/>
+<vertex x="2.475" y="-0.9" curve="-90"/>
+<vertex x="2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="1">
+<vertex x="2.275" y="1.85"/>
+<vertex x="3.7" y="1.85"/>
+<vertex x="3.7" y="1.55"/>
+<vertex x="3.175" y="1.55"/>
+<vertex x="3.175" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-0.9"/>
+<vertex x="2.475" y="-0.9" curve="-90"/>
+<vertex x="2.275" y="-0.7"/>
+</polygon>
+<polygon width="0.4" layer="32">
+<vertex x="2.275" y="1.85"/>
+<vertex x="3.7" y="1.85"/>
+<vertex x="3.7" y="1.55"/>
+<vertex x="3.175" y="1.55"/>
+<vertex x="3.175" y="-0.7" curve="-90"/>
+<vertex x="2.975" y="-0.9"/>
+<vertex x="2.475" y="-0.9" curve="-90"/>
+<vertex x="2.275" y="-0.7"/>
+</polygon>
 </package>
 </packages>
 <symbols>
@@ -15146,7 +15146,7 @@ Source: RS Component / Phycomp</description>
 <text x="-76.2" y="-34.29" size="1.27" layer="97" rot="R90">optional</text>
 <text x="-120.142" y="-31.496" size="1.27" layer="97">optional</text>
 <text x="169.926" y="43.434" size="1.27" layer="97">optional</text>
-<text x="189.23" y="-58.928" size="2.54" layer="97">5</text>
+<text x="189.23" y="-58.928" size="2.54" layer="97">6</text>
 <text x="192.024" y="-69.088" size="2.54" layer="97">CSA</text>
 <text x="40.64" y="30.48" size="3.81" layer="94" ratio="10" rot="MR0">Scratch Sensor Board</text>
 <text x="38.1" y="-50.8" size="1.778" layer="97" rot="MR0">LMV358</text>
@@ -16508,6 +16508,7 @@ Source: RS Component / Phycomp</description>
 <text x="77.47" y="85.598" size="1.778" layer="91">X7R ceramic 16V</text>
 <text x="167.64" y="63.5" size="1.778" layer="91">Unused</text>
 <text x="38.1" y="27.94" size="1.016" layer="91">Must be 20k-75k</text>
+<text x="172.72" y="7.62" size="5.08" layer="91">CSA</text>
 </plain>
 <instances>
 <instance part="FRAME2" gate="G$1" x="0" y="0"/>
