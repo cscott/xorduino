@@ -12719,13 +12719,13 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <wire x1="-3.25" y1="1.25" x2="1.75" y2="0.75" width="0.127" layer="51"/>
 <wire x1="1.75" y1="0.75" x2="1.75" y2="-0.75" width="0.127" layer="51"/>
 <wire x1="1.75" y1="-0.75" x2="-3.25" y2="-1.25" width="0.127" layer="51"/>
-<pad name="VBUS" x="5.1" y="1.6" drill="0.8" diameter="1.143"/>
-<pad name="D+" x="5.1" y="0" drill="0.8" diameter="1.143"/>
-<pad name="GND" x="5.1" y="-1.6" drill="0.8" diameter="1.143"/>
-<pad name="D-" x="3.9" y="0.8" drill="0.8" diameter="1.143"/>
-<pad name="ID" x="3.9" y="-0.8" drill="0.8" diameter="1.143"/>
-<pad name="P$6" x="0" y="-3.65" drill="1.9" diameter="2.667"/>
-<pad name="P$7" x="0" y="3.65" drill="1.9" diameter="2.667"/>
+<pad name="VBUS" x="5.1" y="1.6" drill="0.7" diameter="1.1" shape="offset"/>
+<pad name="D+" x="5.1" y="0" drill="0.7" diameter="1.1" shape="offset"/>
+<pad name="GND" x="5.1" y="-1.6" drill="0.7" diameter="1.1" shape="offset"/>
+<pad name="D-" x="3.9" y="0.8" drill="0.7" diameter="1.1" shape="offset" rot="R180"/>
+<pad name="ID" x="3.9" y="-0.8" drill="0.7" diameter="1.1" shape="offset" rot="R180"/>
+<pad name="P$6" x="0" y="-3.65" drill="1.8" diameter="2.7"/>
+<pad name="P$7" x="0" y="3.65" drill="1.8" diameter="2.7"/>
 <text x="7.25" y="1.5" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <rectangle x1="3.25" y1="3" x2="5.75" y2="4.4" layer="43"/>
 <rectangle x1="3.25" y1="-4.4" x2="5.75" y2="-3" layer="43"/>
@@ -13631,6 +13631,21 @@ Standard 2-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <vertex x="2.275" y="-0.7"/>
 </polygon>
 </package>
+<package name="SJ-2S-BOT-TRACE-NOCONFLICT-PAD">
+<wire x1="-0.8255" y1="-1.016" x2="0.8255" y2="-1.016" width="0.2032" layer="52"/>
+<wire x1="-0.8255" y1="1.016" x2="-1.0795" y2="0.762" width="0.2032" layer="52" curve="90"/>
+<wire x1="1.0795" y1="0.762" x2="0.8255" y2="1.016" width="0.2032" layer="52" curve="90"/>
+<wire x1="1.0795" y1="-0.762" x2="0.8255" y2="-1.016" width="0.2032" layer="52" curve="-90"/>
+<wire x1="-0.8255" y1="-1.016" x2="-1.0795" y2="-0.762" width="0.2032" layer="52" curve="-90"/>
+<wire x1="0.8255" y1="1.016" x2="-0.8255" y2="1.016" width="0.2032" layer="52"/>
+<wire x1="-0.2286" y1="0" x2="0.2286" y2="0" width="0.254" layer="100"/>
+<smd name="1" x="-0.508" y="0" dx="0.635" dy="1.27" layer="16" rot="R180" stop="no" cream="no"/>
+<smd name="2" x="0.508" y="0" dx="0.635" dy="1.27" layer="16" rot="R180" stop="no" cream="no"/>
+<text x="0.9525" y="1.27" size="0.4064" layer="26" rot="MR0">&gt;NAME</text>
+<text x="0.9525" y="-1.651" size="0.4064" layer="28" rot="MR0">&gt;VALUE</text>
+<rectangle x1="-0.9144" y1="-0.7112" x2="0.9144" y2="0.7112" layer="30" rot="R180"/>
+<rectangle x1="-0.2032" y1="-0.635" x2="0.2032" y2="0.635" layer="42" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="USB">
@@ -14150,6 +14165,15 @@ Rise/Fall time: 110us/220us.</description>
 <device name="BOT-VIA-NOCONFLICT" package="SJ-2S-BOT-TRACE-VIA-NOCONFLICT">
 <connects>
 <connect gate="G$1" pin="1" pad="1 VIA6"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="BOT-NOCONFLICT-PAD" package="SJ-2S-BOT-TRACE-NOCONFLICT-PAD">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
@@ -15071,7 +15095,7 @@ Source: RS Component / Phycomp</description>
 <part name="VCC6" library="supply1" deviceset="VCCIO" device="" value="VCCIO"/>
 <part name="JP8" library="xorduino" deviceset="SOLDERJUMPER" device="BOT-VIA-NOCONFLICT" value="N/C"/>
 <part name="JP7" library="xorduino" deviceset="SOLDERJUMPER" device="BOT-VIA-NOCONFLICT" value="N/C"/>
-<part name="JP9" library="xorduino" deviceset="SOLDERJUMPER" device="BOT-VIA-NOCONFLICT" value="N/C"/>
+<part name="JP9" library="xorduino" deviceset="SOLDERJUMPER" device="BOT-NOCONFLICT" value="N/C"/>
 <part name="JP1" library="xorduino" deviceset="SOLDERJUMPER" device="NOCONFLICT" value="N/C"/>
 <part name="JP10" library="xorduino" deviceset="SOLDERJUMPER" device="BOT-VIA-NOCONFLICT" value="N/C"/>
 </parts>
@@ -15146,7 +15170,7 @@ Source: RS Component / Phycomp</description>
 <text x="-76.2" y="-34.29" size="1.27" layer="97" rot="R90">optional</text>
 <text x="-120.142" y="-31.496" size="1.27" layer="97">optional</text>
 <text x="169.926" y="43.434" size="1.27" layer="97">optional</text>
-<text x="189.23" y="-58.928" size="2.54" layer="97">6</text>
+<text x="189.23" y="-58.928" size="2.54" layer="97">7</text>
 <text x="192.024" y="-69.088" size="2.54" layer="97">CSA</text>
 <text x="40.64" y="30.48" size="3.81" layer="94" ratio="10" rot="MR0">Scratch Sensor Board</text>
 <text x="38.1" y="-50.8" size="1.778" layer="97" rot="MR0">LMV358</text>
