@@ -36,14 +36,6 @@ Import)" dialog.
 1,609-4050-1-ND,X3 - USB micro-B connector
 2,CG0603MLC-05E-ND,Z1 Z2 - ESD suppressor
 
--- Power Supply
-2,641-1014-1-ND,D3 D4 - 1A Schottky SMA
-1,587-2055-1-ND,L3 - 100uH 1007
-1,587-1356-1-ND,C14 - 22u 1206
-1,BC3AAW-ND,J5 - battery holder
-1,NJU7261U30-TE1CT-ND,U3 boost regulator XXX I think this is the wrong
-one - want 5V out!
-
 -- Scratch Sensor
 1,311-1361-1-ND,C7 - 100nF 0805 20%
 1,587-1306-1-ND,C10 - .22uF 0805
@@ -59,6 +51,8 @@ one - want 5V out!
 4,CP-3523MJCT-ND,J1 J2 J3 J4 3.5mm audio jacks
 
 -- Robot
+(for a simple robot base, use just these parts, plus the mechanical
+ parts below, plus H1/H2/H3/H4 from above)
 1,445-1371-1-ND,C12 - 10uF 0805
 1,GRM216R71H103KA01D,C15 - .01u 0805 X7R
 1,S1012EC-40-ND,JP12 - 3-pin 1-row header
@@ -76,3 +70,14 @@ one - want 5V out!
 -- Mechanical
 1,24438K-ND,Front Skid
 2,H744-ND,Front Skid Screw (minimum 100)
+
+-- Power Supply
+XXX NOTE that the step-up power supply on XOrduino2 v8 DOES NOT WORK XXX
+    (the coil L3 appears to be saturating at the currents used)
+    These are the parts required to populate this part of the board, but
+    don't buy them unless you're feeling adventurous. Use USB power instead.
+2,641-1014-1-ND,D3 D4 - 1A Schottky SMA
+1,587-2055-1-ND,L3 - 100uH 1007
+1,587-1356-1-ND,C14 - 22u 1206
+1,BC3AAW-ND,J5 - battery holder
+1,NJU7261U50-TE1CT-ND,U3 boost regulator
