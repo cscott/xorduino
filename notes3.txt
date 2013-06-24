@@ -1,0 +1,68 @@
+Hall Sensor Board:
+ AH180N-ZG-7DICT-ND is default part, thresh 35g (max 50g)
+investigate:
+ TCS10DLU(TE85L,F) ($.07 more), thresh 18g (max 25g) <- twice as good
+   are footprints compatible?
+http://www.kjmagnetics.com for magnets
+
+v6:
+- RN7 too close to skid screw hole
+- U4 (motor driver) doesn't have pin1 mark
+- missing 2 red LEDs LED2/LED3
+- LED dot indicator is on wrong side; use the notation from bottom of LED
+- unmask vias below motor driver and switcher
+- L3 footprint could be larger
+removed U1 from xorduino #2 (then replaced)
+U3 wrong on BOM; coil wrong, too.
+user switch makes it hard to insert wires in left hand screw terminal
+taps on AISEN/BISEN to measure motor currents?
+seeing 1.5v drop on optical sensor; max freq 83Hz (min period 12ms)
+  probably design for 1ms min pulse time.
+  small stripe / large stripe for direction? XX
+  if we want direction we need another pair of sensors, w/ different phase
+
+  a b c d == where a!=c, b!=d.  maybe just
+    short long longer (a b c)
+  forward = > > < > > <
+  backward= < < > < < >
+   in a/c states, need to be able to distinguish length of states for direction
+  we could also assume that transitions are "rare"
+
+  short LONG long SHORT -- using length to distinguish assumes
+  constant speed (or places limits on speed of accel/decel, which may
+  be reasonable) (lower is mark, upper is space)
+
+weaker pullup for RN5?  can go to 150k at least.
+ (digikey: 150k RN5, wire wrap, caps and inductors for power supply)
+run board directly from 6V battery pack, maybe w/ diode?
+jumper VUSB to VCCIO, jumper VCCIO to +5V.  Wire jumpers?
+
+-----------------------
+- Move USB PCB connector to bottom corner (near phone jacks), which lets
+  you plug in to the vertical slot on the XO when it is closed (in
+  "tablet mode")
+- move light sensor to USB connector side of XOrduino so it is not
+  shaded by backpack XO Stick.
+
+- usb micro jack is just too small to reasonably hand solder
+- move light sensor over to where usb micro jack is
+- move usb tab connector to bottom corner
+- nylon standoff at front, not conductive Al
+- bottom standoff screw needs a touch of glue?
+- rubber band around board to secure battery pack
+- servo connector is close to pot connection and very similar.
+  disambiguate for more reliable assembly?
+- check wire gauge for screw terminal
+- body of pot might short against USB mini connector.
+  - move USB mini to place occupied by USB micro
+    and move it back away from the edge of the board a hair
+    so it's even w/ pcb board edge and doesn't interfere
+    w/ pcb usb connector
+.- u2 has stripe not dot
+?- L3 footprint seems small
+.- markings: 103 on RN2, 104 on RN4/5, 221 on RN6, 102 on RN3, 220 on
+  RN1, 1.0 on RN7
+
+.- XO Stick: label U2 with arduino pin names.
+- remind people to email me their mailing address
+- ask folks if they have an AVR programmer

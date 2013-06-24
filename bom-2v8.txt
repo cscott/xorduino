@@ -1,0 +1,78 @@
+Here's my suggested XO Stick and XOrduino BOMs, with just the bits
+really necessary (not all the extras).
+
+The XOrduino BOM was put together with Mitch Bradley's help.  Thanks!
+
+Here is the XOrduino DigiKey BOM organized by sections.  You can paste
+individual sections directly into the "Create New BOM (Text File
+Import)" dialog.
+
+-- Basic
+2,311-1102-1-ND,C1 C2 - 18pF 0805
+4,311-1361-1-ND,C2 C3 C4 C5 C6 - 100nF 0805
+1,ATMEGA32U4-AU-ND,U1 - ATMEGA32U4-AU
+1,445-1589-1-ND,C9 - 1uF
+1,587-1356-1-ND,C13 22uF 1206
+1,507-1363-1-ND,F1 - 6V 1.1A 1812 PTC Resettable Fuse
+1,754-1135-1-ND,LED1 - LED yellow 0805
+2,475-1415-1-ND,LED2 LED3 - LED red 0805
+1,475-1410-1-ND,LED4 - LED green 0805
+10,CRA6S822CT-ND,RN1 - 4x22R (1 required, minimum order is 10)
+10,CRA6S810KCT-ND,RN2 - 4x10K (1 required, minimum order is 10)
+10,CRA6S81.0KCT-ND,RN3 - 4x1K (1 required, minimum order is 10)
+1,450-1652-ND,SW1 - tactile switch
+1,CTX1085-ND,Y1 - 16MHz 18pF crystal
+1,609-3550-ND,H1 - 10-pin female
+2,609-3559-ND,H2 H3 - 8-pin female
+1,609-3558-ND,H4 - 6-pin female
+1,609-3218-ND,H5 - 3-pin 2-row header
+
+-- Optional
+1,311-1.0MARCT-ND,R1 - 1M 0805
+1,1N4148FS-ND,D1 - 1N4148
+1,445-1589-1-ND,C8 - 1uF 0805
+2,L1 L2 - ferrite bead 30 ohm
+1,WM17115-ND,X2 - USB mini-B connector
+1,609-4050-1-ND,X3 - USB micro-B connector
+2,CG0603MLC-05E-ND,Z1 Z2 - ESD suppressor
+
+-- Power Supply
+2,641-1014-1-ND,D3 D4 - 1A Schottky SMA
+1,587-2055-1-ND,L3 - 100uH 1007
+1,587-1356-1-ND,C14 - 22u 1206
+1,BC3AAW-ND,J5 - battery holder
+1,NJU7261U30-TE1CT-ND,U3 boost regulator XXX I think this is the wrong
+one - want 5V out!
+
+-- Scratch Sensor
+1,311-1361-1-ND,C7 - 100nF 0805 20%
+1,587-1306-1-ND,C10 - .22uF 0805
+1,445-1356-1-ND,C11 - .33uF 0805
+1,1N4148FS-ND,D2 - 1N4148
+1,102-1721-ND,MIC1 - 9.7mm microphone
+1,987-1279-ND,P1 - 9mm Pot
+1,1080-1019-ND,Q1 - ambient light sensor
+1,311-2.2KARCT-ND,R2 - 2.2K 0805
+10,CRA6S8100KCT-ND,RN4 - 4x100K (1 required, minimum order is 10)
+1,450-1652-ND,SW2 - tactile switch
+1,296-9571-1-ND,U2 - LMV358 SOIC-8
+4,CP-3523MJCT-ND,J1 J2 J3 J4 3.5mm audio jacks
+
+-- Robot
+1,445-1371-1-ND,C12 - 10uF 0805
+1,GRM216R71H103KA01D,C15 - .01u 0805 X7R
+1,S1012EC-40-ND,JP12 - 3-pin 1-row header
+1,475-1415-1-ND,LED5 - LED red 0805
+1,A106056CT-ND,R3 - 1K
+10,CRA6S8100KCT-ND,RN5 - 4x100K (1 required, minimum order is 10)
+10,CRA6S8220CT-ND,RN6 - 4x220R (1 required, minimum order is 10)
+1,296-29434-1-ND,U4 - DRV8833PWP motor driver
+2,QRE1113GRCT-ND,U5 U6 - light sensor
+2,A98036-ND,J6 J7 screw terminal blocks
+1,Y91R0CT-ND,RN7 4x1R
+1,EG4935-ND,SW3 right snap switch
+1,EG4936-ND,SW4 left snap switch
+
+-- Mechanical
+1,24438K-ND,Front Skid
+2,H744-ND,Front Skid Screw (minimum 100)
